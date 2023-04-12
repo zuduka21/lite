@@ -1,0 +1,3 @@
+<?php
+
+$collection = $A->getReviewedArticles();

@@ -1,0 +1,41 @@
+RewriteEngine on
+
+ErrorDocument 404 /404.html
+
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^amp$ index.php?amp=1 [L]
+
+RewriteRule ^sitemap.xml$ index.php?type=sitemap [L]
+RewriteRule ^rss.xml$ index.php?type=rss [L]
+RewriteRule ^rss_(\d+).xml$ index.php?type=rss&category=$1 [L]
+RewriteRule ^rss_turbo.xml$ index.php?type=rss_turbo&page=0 [L]
+RewriteRule ^rss_turbo_(\d+).xml$ index.php?type=rss_turbo&page=$1 [L]
+RewriteRule ^rss_zen.xml$ index.php?type=rss_zen [L]
+
+RewriteRule ^amp/contacts$ pages/amp/contacts.php?amp=1 [L]
+RewriteRule ^amp/about-us$ pages/amp/about-us.php?amp=1 [L]
+RewriteRule ^amp/cookies-policy$ pages/amp/cookies-policy.php?amp=1 [L]
+RewriteRule ^amp/copyright$ pages/amp/legal.php?amp=1 [L]
+RewriteRule ^copyright$ legal.php [L]
+RewriteRule ^contacts$ contacts.php [L]
+RewriteRule ^about-us$ about-us.php [L]
+RewriteRule ^cookies-policy$ cookies-policy.php [L]
+
+RewriteRule ^amp/(\d+)$ index.php?page=$1&amp=1 [L]
+RewriteRule ^(\d+)$ index.php?page=$1 [L]
+RewriteRule ^amp/([^/]+)-(\d+)$ index.php?url=asd&id=$2&type=post&amp=1 [L]
+RewriteRule ^([^/]+)-(\d+)$ index.php?url=zxc&id=$2&type=post [L]
+
+RewriteRule ^photo/([^/]+)-(\d+)-(\d+).jpg$ ./i/$2/$3.jpg [L]
+
+RewriteRule ^amp/([^/]+)/([0-9]+)$ index.php?url=$1&type=category&page=$2&amp=1 [L]
+RewriteRule ^amp/([^/]+)$ index.php?url=$1&type=category&amp=1 [L]
+RewriteRule ^amp/([^/]+)/([^/]+)$ index.php?url=$1/$2&type=category&amp=1 [L]
+RewriteRule ^amp/([^/]+)/([^/]+)/([0-9]+)$ index.php?url=$1/$2&type=category&page=$3&amp=1 [L]
+RewriteRule ^([^/]+)/([0-9]+)$ index.php?url=$1&type=category&page=$2 [L]
+RewriteRule ^([^/]+)$ index.php?url=$1&type=category [L]
+RewriteRule ^([^/]+)/([^/]+)$ index.php?url=$1/$2&type=category [L]
+RewriteRule ^([^/]+)/([^/]+)/([0-9]+)$ index.php?url=$1/$2&type=category&page=$3 [L]

@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /*.css
+Allow: /*.js*
+Allow: /*.jpeg
+Allow: /*.jpg
+Allow: /*.png
+Disallow: /*?*
+Disallow: /404.html
+Disallow: *.php
+
+Sitemap: https://lafoy.ru/sitemap.xml

@@ -1,0 +1,15 @@
+{
+    "name": "web_quantum/lafoy",
+    "description": "Lafoy.ru: Live beautifully!",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Web Quantum",
+            "email": "bewebtoday@gmail.com"
+        }
+    ],
+    "require": {
+        "robmorgan/phinx": "^0.12.4",
+        "vlucas/phpdotenv": "^5.2"
+    }
+}

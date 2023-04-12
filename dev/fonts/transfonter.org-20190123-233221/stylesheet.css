@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('hinted-Roboto-LightItalic.eot');
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'),
+        url('hinted-Roboto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('hinted-Roboto-LightItalic.woff2') format('woff2'),
+        url('hinted-Roboto-LightItalic.woff') format('woff'),
+        url('hinted-Roboto-LightItalic.ttf') format('truetype'),
+        url('hinted-Roboto-LightItalic.svg#Roboto-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+

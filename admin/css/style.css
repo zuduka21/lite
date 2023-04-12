@@ -1,0 +1,37 @@
+.lafoy-navi {
+    height: 80px;
+}
+
+h3 {
+    padding-bottom: 25px;
+}
+
+.icon a, a.icon  {
+    text-decoration: none;
+}
+
+textarea {
+    height:120px;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.cover {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+@media (min-width: 768px)  {
+
+    .lafoy-content {
+        max-width: 90%;
+    }
+
+}

@@ -1,0 +1,98 @@
+.category__title {
+    margin-bottom: 3.2rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3.5rem;
+}
+
+.category__row {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.category__post, .category__post:last-child {
+    margin-bottom: 2.7rem;
+}
+
+.categoryPost .categoryPost__link {
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+.categoryPost__img {
+    width: 100%;
+}
+
+.categoryPost_content {
+    background: #FFFFFF;
+    opacity: 1;
+    padding: 1.5rem 1.5rem 0 0rem;
+    text-align: left;
+}
+.categoryPost__title {
+    max-width: 95%;
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+    display: block;
+    text-decoration: none;
+    color: #222222;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+}
+.categoryPost .categoryPost__title {
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+    padding: 0;
+    font-weight: 700;
+    letter-spacing: -0.04rem;
+    position: relative;
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    display: block;
+    overflow: hidden;
+}
+
+.categoryPost__infoCategory {
+    display: inline-block;
+    padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #555555;
+    background-color: #fff400;
+    font-size: 1rem;
+}
+
+.categoryPost__infoCategory {
+    position: relative;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-bottom: 10px;
+}
+
+.contentBlock__wrapper{
+	max-width: 700px;
+    margin: 0 auto;
+}
